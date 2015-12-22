@@ -196,7 +196,7 @@ class ssh (
       case $::kernelrelease {
         '5.11': {
           $default_packages                      = ['pkg://solaris/network/ssh',
-                                                    'network/ssh/ssh-key',
+                                                    'pkg://solaris/network/ssh/ssh-key',
                                                     'service/network/ssh']
           $default_service_name                  = 'ssh'
           $default_service_hasstatus             = true
