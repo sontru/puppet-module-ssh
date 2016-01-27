@@ -195,9 +195,7 @@ class ssh (
       $default_sshd_config_hostkey             = [ '/etc/ssh/ssh_host_rsa_key' ]
       case $::kernelrelease {
         '5.11': {
-          $default_packages                      = ['pkg://solaris/network/ssh',
-                                                    'pkg://solaris/network/ssh/ssh-key',
-                                                    'service/network/ssh']
+          $default_packages                      = ['consolidation/osnet/osnet-incorporation']
           $default_service_name                  = 'ssh'
           $default_service_hasstatus             = true
           $default_ssh_package_source            = undef
