@@ -79,7 +79,7 @@ class ssh (
   $sshd_ignoreuserknownhosts           = 'no',
   $sshd_ignorerhosts                   = 'yes',
   $manage_service                      = true,
-  $sshd_addressfamily                  = 'any',
+  $sshd_addressfamily                  = undef,
   $service_ensure                      = 'running',
   $service_name                        = 'USE_DEFAULTS',
   $service_enable                      = true,
